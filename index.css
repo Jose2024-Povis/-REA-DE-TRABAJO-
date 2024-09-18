@@ -1,0 +1,89 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-image: url('../trial/img/trialcatering.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clase-iniciar {
+    background: rgba(248, 248, 248, 0.445);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.rest {
+    font-family: "Monoton", sans-serif;
+    font-size: 50px;
+    color: #333; /* Color de texto oscuro */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    margin-bottom: 20px;
+}
+
+form {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(80% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #cccccc00;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #1b268d;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #088b9c;
+}
+
+.apart-regis {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.boton-registrar {
+    color: #122d47;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.boton-registrar:hover {
+    text-decoration: underline;
+}
+
+.clase-iniciar p {
+    color: #333;
+}

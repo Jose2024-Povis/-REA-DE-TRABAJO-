@@ -1,0 +1,277 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0; /* Incrementa el tamaño del header */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .rest {
+    font-family: "Monoton", sans-serif;
+    font-size: 24px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav {
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+section { /* Espacio reducido entre secciones */
+    text-align: center;
+    color: #333;
+    margin-bottom: 3px; /* Espacio reducido entre secciones */
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.seccion-fondo {
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.fondo-inicio {
+    background-image: url('../trial/img/fondo-inicio.jpg');
+}
+
+.fondo-decoraciones {
+    background-image: url('../trial/img/fondo-decoraciones.jpg');
+}
+
+.fondo-cartas {
+    background-image: url('../trial/img/fondo-cartas.jpg');
+}
+
+.fondo-reservas {
+    background-image: url('../trial/img/fondo-reservas.jpg');
+}
+
+.contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.texto {
+    width: 40%;
+}
+
+.texto h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.texto p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.imagen {
+    margin-top: 40px;
+    width: 50%;
+}
+
+.imagen img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.boton-ver {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #1b268d;
+    border: 2px solid #fff; /* Contorno del botón */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.boton-ver:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+}
+
+.slider {
+    margin-top: 20px;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    position: relative;
+}
+
+.slider .slide {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.slider .slide img {
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.slider .anterior, .slider .siguiente {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.slider .anterior {
+    left: 10px;
+}
+
+.slider .siguiente {
+    right: 10px;
+}
+.cartas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.cartas .carta {
+    width: 300px;
+    margin: 30px 100px;
+}
+
+
+
+
+
+/* Estilos para los labels e inputs en la sección de Reservas */
+
+form label {
+    display: block;
+    font-size: 20px; /* Tamaño de fuente más grande */
+    margin-bottom: 10px;
+    color: #fff; /* Color del texto */
+}
+
+/* Estilos para los inputs en la sección de Reservas */
+form input[type="text"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="time"],
+form input[type="number"] {
+    width: calc(100% + 40px); /* Ajuste para el padding y bordes */
+    padding: 12px; /* Aumenta el padding */
+    border: none;
+    border-radius: 8px; /* Borde más redondeado */
+    font-size: 18px; /* Tamaño de fuente más grande */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    color: #333; /* Color del texto dentro del input */
+    margin-bottom: 15px; /* Espacio entre inputs */
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Ajuste específico para el botón de Reservar */
+form input[type="submit"] {
+    background-color: #1b268d;
+    color: white;
+    padding: 14px 24px; /* Aumenta el padding del botón */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px; /* Tamaño de fuente más grande */
+    margin-top: 20px;
+    border: 2px solid #1b268d; /* Borde para resaltar */
+    border-radius: 8px; /* Borde más redondeado */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Efecto hover para el botón */
+form input[type="submit"]:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-columna {
+    width: 30%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-columna .rest{
+    font-family: "Monoton", sans-serif;
+    font-size: 24px;
+    margin-left: 20px;
+    font-weight: bold;
+}
